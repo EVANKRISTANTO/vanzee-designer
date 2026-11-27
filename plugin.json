@@ -1,0 +1,12 @@
+{
+  "name": "vanzee-designer",
+  "displayName": "Vanzee Designer",
+  "description": "Curated UI/UX design system, 9 dashboard references (CDN + local), 42 micro-interactions, 20 text animations, anti-slop typography, system-wide component parity, and Lighthouse audit rules.",
+  "version": "1.0.0",
+  "repository": "https://github.com/EVANKRISTANTO/vanzee-designer",
+  "suggestedPrompts": [
+    "Build an analytics dashboard using one of the curated vanzee-designer references",
+    "Design a responsive landing page with curated typography and text animations",
+    "Audit and improve this website's UI/UX, micro-interactions, and Lighthouse score"
+  ]
+}

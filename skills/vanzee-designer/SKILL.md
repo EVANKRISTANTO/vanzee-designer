@@ -1,0 +1,120 @@
+---
+name: vanzee-designer
+description: Use when designing, building, or reviewing websites, web apps, UI components, icons, typography, animations, or micro-interactions so interfaces use curated design libraries, purposeful motion, and verified UX guardrails.
+---
+
+# Vanzee Designer — Curated UI/UX Resources, Motion & UX Guardrails
+
+Pusat kurasi resource UI/UX, daftar micro-interaction, dan standar Good UX untuk menghasilkan antarmuka web dan aplikasi yang rapi, responsif, berkarakter, dan mudah digunakan.
+
+## 1. Curated Resource & Library Stack
+
+Gunakan library terkurasi di bawah ini sebagai sumber utama saat merancang atau membangun antarmuka:
+
+### A. Icon, Illustration & 3D Library
+- **Material Symbols & Icons (Google Fonts):** `https://fonts.google.com/icons`
+  - **Standar pakai:** Pilih satu gaya konsisten per proyek (`Outlined`, `Rounded`, atau `Sharp` — jangan dicampur dalam satu antarmuka).
+  - **Variable Axes:** Manfaatkan sumbu `wght` (ketebalan selaras dengan font teks), `FILL` (`0` untuk default, `1` untuk state aktif/terpilih), `GRAD`, dan `opsz` agar ikon tajam di semua ukuran.
+  - **Performa:** Untuk proyek produksi, utamakan SVG inline/komponen atau muat Google Fonts stylesheet dengan parameter `&icon_names=...` agar hanya ikon yang dipakai yang diunduh.
+  - **Aksesibilitas:** Setiap tombol ikon wajib memiliki label teks pendamping atau `aria-label` yang jelas, serta area sentuh minimal `44px × 44px`.
+- **Icons8 (Icons, Illustrations & 3D):** `https://icons8.com/`
+  - Gunakan untuk ikon bergaya khusus, ilustrasi editorial/empty-state, dan elemen 3D siap pakai yang serasi dengan tema visual produk.
+
+### B. Font Library & Typography Inspiration
+- **Google Fonts:** `https://fonts.google.com/`
+- **Fontshare (Quality Free Fonts):** `https://www.fontshare.com/` — sumber font modern berkualitas gratis (*Satoshi*, *Clash Display*, *Cabinet Grotesk*, *General Sans*, *Switzer*, *Zodiak*, dll.) untuk menghindari pilihan monoton.
+- **Typewolf:** `https://www.typewolf.com/` — referensi pairing tipografi dunia nyata dan panduan proporsi editorial/UI.
+  - **Standar pakai:** Padukan 1 Display/Heading + 1 Body (+ 1 Mono opsional untuk angka/harga/kode) dengan kontras karakter yang jelas (koord. dengan skill `typography-curation`).
+  - **Anti-Slop:** Hindari memakai *Inter*, *Plus Jakarta Sans*, *Roboto*, atau *Space Grotesk* secara otomatis kecuali diminta langsung oleh pengguna atau merupakan identitas brand.
+  - **Performa:** Muat hanya bobot (*weights*) yang benar-benar dipakai dan sertakan `display=swap`.
+
+### C. Color Palette & Contrast Tools
+- **Realtime Colors:** `https://www.realtimecolors.com/` — uji kombinasi warna background, text, primary, secondary, dan accent langsung pada simulasi UI nyata agar kontras & hierarkinya terukur.
+- **Coolors:** `https://coolors.co/` — generator palet warna cepat, eksplorasi harmoni warna, dan pengecekan kontras aksesibilitas (WCAG AA/AAA).
+
+### D. Website & UI/UX Inspiration Galleries
+Gunakan galeri referensi di bawah ini saat meriset layout landing page, alur produk, gaya visual, maupun interaksi web modern:
+- **Refero:** `https://refero.design/styles` — referensi gaya visual & komponen UI/UX terkurasi.
+- **Land-book:** `https://land-book.com/` — galeri inspirasi desain website modern lintas industri.
+- **Lapa Ninja:** `https://www.lapa.ninja/` — 7,300+ contoh desain landing page berkonversi tinggi.
+- **Mobbin:** `https://mobbin.com/` — referensi pola flow & screen UI/UX produk nyata (web & mobile).
+- **Godly:** `https://godly.design/` — inspirasi website dengan animasi, tipografi ekspresif, dan craft interaktif tinggi.
+- **Awwwards:** `https://www.awwwards.com/` — tren web design, layout eksperimental, dan micro-interaction kelas dunia.
+
+### E. Referensi Desain UI & Dashboard Terkurasi (9 Archetype CDN + Multi-Referensi)
+
+Semua media referensi tersedia secara publik di **Fivemanage CDN** agar dapat diakses dan dilihat dari perangkat mana saja:
+
+| Archetype Referensi | Ciri Visual Utama | Paling Cocok Untuk | Media Referensi (CDN Publik & Lokal) |
+| :--- | :--- | :--- | :--- |
+| **Fennel AI Agent Dashboard** | Sidebar terang, AI prompt composer + tombol biru, approval `Reject/Approve`, running tasks bar, grid status agen `3×2` | AI workspace, agent orchestrator, approval queue | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/fennel-ai-agent-dashboard.jpg) · [Lokal](references/images/fennel-ai-agent-dashboard.jpg) |
+| **Paymo: Wallet Overview** | Mesh gradient es-biru lembut, icon-only rail, saldo kaca + 4 quick actions, kartu VISA navy, bar chart arsiran diagonal | E-wallet, fintech, dompet digital, treasury | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/paymo-wallet-overview.jpg) · [Lokal](references/images/paymo-wallet-overview.jpg) |
+| **Business Transactions** | Sidebar workflow, 3 kartu KPI wash gradasi pastel iridescent sudut kanan atas, tabel ledger lengkap dengan GL code & status pill | Accounting, corporate banking, buku kas | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/business-transactions-dashboard.jpg) · [Lokal](references/images/business-transactions-dashboard.jpg) |
+| **Ecommerce Orders** | Hero banner gelap emerald + nama display serif italic + tab bar di banner, 4 KPI spark-chart khas, dual line chart + order table | E-commerce admin, order & merchant analytics | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/ecommerce-orders-dashboard.jpg) · [Lokal](references/images/ecommerce-orders-dashboard.jpg) |
+| **FleetTrack: Container Fleet** | Floating dark pill top nav, aksen safety orange `#FF4D00`, hero truk/kontainer + floating detail card, gauge arc & rute 3D | Logistik, fleet tracking, IoT & supply chain | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/fleettrack-container-fleet.jpg) · [Lokal](references/images/fleettrack-container-fleet.jpg) |
+| **Personal Finance Analytics** | Icon rail indigo bercahaya, 5 KPI row, dual-line chart, polar rose pie chart pastel, merchant progress bar & half-donut tick arc | Personal finance, wealth & expense tracker | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/personal-finance-analytics.jpg) · [Lokal](references/images/personal-finance-analytics.jpg) |
+| **FleetTrack: Fleet Reports** | Satu design system dengan FleetTrack, sub-nav tab pill, kartu jangkar kontras gelap (`Fuel Usage & Cost`), meter distribusi tick oranye | Halaman laporan lanjutan, ops & audit KPI | [CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/fleettrack-fleet-reports.jpg) · [Lokal](references/images/fleettrack-fleet-reports.jpg) |
+| **Cloud Dock: File Management** | Dual sidebar obsidian `#120B24` + aksen electric violet `#7C3AED`, storage bar, preview dokumen, folder 3D avatar stack, bottom selection bar | Cloud storage, document hub, team drive | [CDN Main](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/file-management-cloud-dock-main.jpg) · [CDN Style](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/file-management-cloud-dock-styleguide.jpg) · [Lokal](references/images/file-management-cloud-dock-main.jpg) |
+| **Smart Home Control** | Dark ambient translucent glass, icon dock kiri, room pill bawah, dial AC/vertical light slider, device cards 3D, Energy view & live Theme preview | Smart home, IoT control, energy & solar dashboard | [CDN Video](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/references/smart-home-control-dashboard.mp4) · [Lokal](references/images/smart-home-control-dashboard.mp4) |
+
+#### Aturan Wajib Pemilihan & Penggabungan Referensi
+1. **Wajib Tanya ke User (`ask_question`):** Setiap kali user meminta pembuatan UI/dashboard/website baru dan belum menyebut referensi desainnya, **wajib tanyakan lewat `ask_question` dengan `is_multi_select: true`** referensi mana yang ingin dipakai (boleh pilih **1** atau **gabungan beberapa referensi**).
+2. **Dukung Gabungan Multi-Referensi (Hybrid Blending):** Jika user memilih 2 atau lebih referensi, gabungkan elemen terbaiknya secara harmonis menjadi **satu design system yang utuh** (misal: shell/hero banner dari Referensi A + gaya kartu KPI dari Referensi B + struktur tabel/chart dari Referensi C) dengan palet warna & tipografi yang tetap menyatu.
+3. **Wajib Visual Fidelity:** Sebelum menulis kode, **baca** [references/dashboard-archetypes.md](references/dashboard-archetypes.md) **dan inspeksi gambar asli** (dari file lokal atau unduh/buka via URL CDN di atas bila dijalankan di device lain) agar layout, hierarki permukaan, grafik, warna aksen, dan karakter visualnya **benar-benar sesuai foto referensi**.
+
+### F. Image Reference & Pencarian Aset Real-World (Diperbolehkan & Dianjurkan)
+- **Pinterest (Visual & Moodboard Reference):** `https://www.pinterest.com/` — referensi komposisi visual, moodboard gaya, foto produk, dan inspirasi art direction.
+- **Pencarian Aset Nyata (Google / Web):** AI **diperbolehkan dan didorong untuk mencari aset gambar nyata di Google/web** (foto produk, botol minuman mis. botol Starbucks, makanan, kendaraan, logo, stock photo, dll.) saat user memintanya untuk ditampilkan di website:
+  - Cari URL gambar berkualitas tinggi & bersih (tanpa watermark) melalui pencarian web (`search_web` / sumber terbuka seperti Wikimedia, Unsplash, Pexels, atau situs resmi produk).
+  - Verifikasi tautan gambar aktif (HTTP `200`, tipe `image/*`) atau simpan lokal / unggah ke CDN bila perlu agar tidak gagal muat (`403`/`404`) akibat hotlink block, serta selalu lengkapi `alt`, `object-fit`, dan rasio proporsional.
+
+### G. Slot Ekspansi Resource Lainnya (Siap Diupdate)
+Siap ditambahkan kategori tambahan sesuai permintaan pembaruan pengguna berikutnya.
+
+---
+
+## 2. Katalog 42 Micro-Interactions & Motion Patterns
+
+Referensi pola animasi terkurasi (terinspirasi *The ABC of UI*) untuk membuat UI terasa hidup tanpa mengorbankan performa. Gunakan properti GPU-friendly (`transform`, `opacity`, `stroke-dashoffset`, `clip-path`, `grid-template-rows`) dan wajib hormati `prefers-reduced-motion`.
+
+| Kategori | Pola Animasi | Mekanisme & Tujuan UX |
+| :--- | :--- | :--- |
+| **Buttons & Actions** | `Toggle`, `Like Burst`, `Send -> Sent`, `Copy -> Copied!`, `Download`, `Upload`, `Ripple Tap`, `Trash`, `Unlock` | Umpan balik klik taktil (`scale(0.97)`), konfirmasi sukses (ikon centang pop-in / plane fly-out / lid lift), dan kejelasan aksi tanpa layout shift. |
+| **Forms & Inputs** | `Checkbox`, `Radio Group`, `Star Rating`, `Range Slider`, `Stepper`, `Float Label` | Draw-in SVG check (`stroke-dashoffset`), dot scale-in, label mengambang persisten saat fokus/terisi, dan angka stepper yang responsif. |
+| **Loaders & Progress** | `Spinner`, `Dot Loader`, `Progress Bar`, `Progress Ring`, `Skeleton`, `Charging`, `Connecting`, `Typing...` | Indikator progres real-time (linear & circular SVG), status koneksi/chat aktif, dan skeleton layout-preserving untuk mencegah layar kosong. |
+| **Navigation & Layout** | `Menu -> Close`, `Search Expand`, `Tab Switch`, `Grid <-> List`, `Accordion`, `Carousel`, `Drag to Sort` | Morph ikon hamburger ke `X`, pill/underline tab bergeser mulus, expand FAQ via CSS Grid `0fr -> 1fr`, dan reorder list dengan elevasi bayangan. |
+| **Overlays & Cards** | `Open Folder`, `Doc Preview`, `Notification`, `Modal Pop`, `Toast`, `Card Flip`, `Swipe Delete` | Konteks spasial jelas (scale + translateY entrance), bell badge pop, flip kartu 3D `rotateY(180deg)`, dan aksi hapus geser dengan collapse halus. |
+| **Media & Data** | `Avatar Stack`, `Equalizer`, `Play / Pause`, `Day / Night`, `Bar Chart` | Hover spread pada avatar tumpuk, morph ikon media, transisi tema celestial, dan pertumbuhan bar chart bertahap (`scaleY`). |
+
+> Untuk token CSS standar dan contoh kode implementasi yang ringan & aksesibel, baca [references/motion-recipes.md](references/motion-recipes.md).
+
+### Standar Kualitas Seluruh Komponen Pendukung (System-Wide Parity)
+Semua komponen pendukung di luar layout utama—termasuk **Pickers** (`select`, `combobox`, `date picker`, `toggle`, `slider`, `stepper`, `dropzone`, `OTP`), **Actions** (`button variants`, `async button`, `bulk bar`), **Navigation** (`sidebar`, `drawer`, `tabs`, `pagination`, `breadcrumbs`, `⌘K command palette`), **Data & Charts** (`table`, `accordion`, `timeline`, `avatar stack`, `tooltip`), dan **Feedback/Overlays** (`<dialog>`, `popover`, `toast`, `inline alert`, `skeleton`, `empty state`, `lightbox`)—**wajib mewarisi token visual dan kualitas micro-interaction yang sama dengan desain utama**. Baca detail standarnya di [references/component-craft.md](references/component-craft.md).
+
+### Katalog 20 Text Animations (Kinetic Typography)
+Untuk animasi headline, hero, dan angka metrik, gunakan skill **`text-animations`** (termasuk `Typewriter`, `Mask Rise`, `Scramble Decode`, `Gradient Flow`, `Word Stagger`, `Blur In`, `Letter Bounce`, `Marker Highlight`, `Number Count-up`, `Rotating Word`, `Tracking Expand`, `Outline to Fill`, `RGB Glitch`, `Wave`, `Letter Flip`, `Squiggle Underline`, `3D Extrude`, `Zoom Punch`, `Strike & Replace`, `Split Halves`) dengan menjaga aksesibilitas screen reader (`aria-label`) & `prefers-reduced-motion`.
+
+---
+
+## 3. Checklist 7 Good UX vs Bad UX (Wajib Lolos)
+
+Pastikan antarmuka tidak mengulang 7 kesalahan UX klasik berikut:
+
+1. **Label Persisten > Placeholder Saja:** Label input wajib tetap terlihat di atas/samping kolom setelah diisi (atau pakai *Float Label* yang tetap terbaca). Jangan mengandalkan `placeholder` sebagai satu-satunya penanda kolom.
+2. **Pesan Error Kontekstual + Solusi > Error Generik:** Hindari pesan buntu seperti *"Terjadi kesalahan / Error 500"*. Jelaskan apa yang terjadi, status data pengguna, dan sediakan aksi pemulihan (mis. *"Belum tersimpan ke cloud — Coba lagi"*).
+3. **Guided Empty State > "Tidak ada data":** Saat data kosong, tampilkan ikon kontekstual, penjelasan singkat, dan tombol CTA utama langkah berikutnya (mis. `+ Buat catatan pertama`).
+4. **Tombol Konfirmasi Eksplisit > "OK / Batal":** Pada dialog destruktif/hapus, sebutkan target dan dampaknya, serta tulis label tombol sesuai aksinya (mis. **`Hapus catatan`** berwarna merah, bukan `OK`).
+5. **Aturan Validasi Tampil Di Awal > Muncul Setelah Gagal:** Tampilkan syarat input (mis. aturan kata sandi) sejak awal dengan indikator validasi real-time sebelum user menekan tombol lanjut.
+6. **Tap Target ≥ 44px + Label Ikon > Ikon Kecil Tanpa Label:** Jaga area klik/sentuh minimal `44px × 44px` dengan jarak aman, dan sertakan label teks singkat di bawah/samping ikon navigasi/toolbar agar tidak membingungkan.
+7. **Skeleton Screen > Layar Kosong + Spinner:** Saat memuat konten halaman/list, gunakan skeleton menyerupai bentuk layout asli agar loading terasa lebih cepat dan bebas layout shift (CLS rendah).
+
+---
+
+## 4. Sinergi dengan Skill Lain
+
+- **`vanzee-designer`** (Skill ini): Hub library terkurasi (Material Symbols, Google Fonts), 9 referensi desain UI, katalog 42 micro-interaction, dan 7 guardrail Good UX.
+- **`ui-ux-pro-max`**: Arah visual, komposisi tata letak, dan pemilihan palet warna produk.
+- **`typography-curation`**: Pemilihan & pairing font spesifik non-AI-default dari Google Fonts.
+- **`text-animations`**: Katalog 20 animasi teks & kinetic typography yang aksesibel.
+- **`micro-interactions`**: Standar token timing/easing CSS dan aturan aksesibilitas gerak.
+- **`lighthouse-audit-fix`**: Audit performa, aksesibilitas, SEO, dan Core Web Vitals setelah website selesai dibangun.
