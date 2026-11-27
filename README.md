@@ -16,8 +16,8 @@ Paket skill dan rules terkurasi untuk Antigravity agar agen AI selalu membangun 
    - **Icon, Illustration & 3D:** [Material Symbols & Icons](https://fonts.google.com/icons), [Icons8](https://icons8.com/)
    - **Fonts & Typography:** [Google Fonts](https://fonts.google.com/), [Fontshare](https://www.fontshare.com/), [Typewolf](https://www.typewolf.com/)
    - **Colors & Contrast:** [Realtime Colors](https://www.realtimecolors.com/), [Coolors](https://coolors.co/)
-   - **Web & UI/UX Galleries:** [Refero](https://refero.design/styles), [Land-book](https://land-book.com/), [Lapa Ninja](https://www.lapa.ninja/), [Mobbin](https://mobbin.com/), [Godly](https://godly.design/), [Awwwards](https://www.awwwards.com/), [Pinterest](https://www.pinterest.com/)
-   - **9 Referensi UI/Dashboard Terkurasi (Lokal + CDN Publik):**
+   - **Web & UI/UX Galleries:** [Refero](https://refero.design/styles), [Land-book](https://land-book.com/), [Lapa Ninja](https://www.lapa.ninja/), [Mobbin](https://mobbin.com/), [Godly](https://godly.design/), [Awwwards](https://www.awwwards.com/), [Shadcn Space](https://shadcnspace.com/animated-blocks), [Pinterest](https://www.pinterest.com/)
+   - **9 Referensi UI/Dashboard Terkurasi + 7 Video Pola Interaksi Teranalisa (Lokal + CDN Publik):**
      1. *Fennel AI Agent Dashboard*
      2. *Paymo: Wallet Overview*
      3. *Business Transactions Dashboard*
@@ -27,6 +27,8 @@ Paket skill dan rules terkurasi untuk Antigravity agar agen AI selalu membangun 
      7. *FleetTrack: Fleet Reports*
      8. *Cloud Dock: File Management*
      9. *Smart Home Control Dashboard*
+     10. *Motion & Block Library (`references/motion-blocks-library.md`):* **Dot-Matrix AI Thinking Pill**, **Cinema 3D Seat Map & View Preview**, **Inline Morphing Sentence Order Sheet**, **Dark AI SaaS Landing Architecture**, **Product Dial Showcase Hero (Hero 68)**, **Immersive Game & Character Hero (Hero 55)**, **Frosted Glass Plan Cards (Pricing 18)**, plus 60+ blok **Shadcn Space Animated Blocks**.
+   - **Otomasi Aset Nyata (Anti-Icon-Buatan):** Wajib pakai library ikon/logo/foto asli lewat pencarian web otomatis bila aset tidak tersedia secara lokal.
    - **Katalog 42 Micro-Interactions**, **System-Wide Component Parity** (`references/component-craft.md`), **Motion Recipes** (`references/motion-recipes.md`), dan **7 Guardrail Good UX vs Bad UX**.
 2. **`typography-curation`** — Panduan pairing font anti-slop (menghindari font default AI yang monoton).
 3. **`text-animations`** — Katalog 20 pola kinetic typography + resep CSS aksesibel (`aria-label` & `prefers-reduced-motion`).

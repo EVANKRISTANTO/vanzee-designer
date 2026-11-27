@@ -40,6 +40,7 @@ Gunakan galeri referensi di bawah ini saat meriset layout landing page, alur pro
 - **Mobbin:** `https://mobbin.com/` — referensi pola flow & screen UI/UX produk nyata (web & mobile).
 - **Godly:** `https://godly.design/` — inspirasi website dengan animasi, tipografi ekspresif, dan craft interaktif tinggi.
 - **Awwwards:** `https://www.awwwards.com/` — tren web design, layout eksperimental, dan micro-interaction kelas dunia.
+- **Shadcn Space & Animated Blocks:** `https://shadcnspace.com/` & `https://shadcnspace.com/animated-blocks` — library blok landing page & motion prompt Shadcn (Hero, Pricing, Bento, Feature, Integration, Auth, Full Landing Pages). Lihat katalog lengkap & video referensi CDN di [references/motion-blocks-library.md](references/motion-blocks-library.md).
 
 ### E. Referensi Desain UI & Dashboard Terkurasi (9 Archetype CDN + Multi-Referensi)
 
@@ -62,11 +63,15 @@ Semua media referensi tersedia secara publik di **Fivemanage CDN** agar dapat di
 2. **Dukung Gabungan Multi-Referensi (Hybrid Blending):** Jika user memilih 2 atau lebih referensi, gabungkan elemen terbaiknya secara harmonis menjadi **satu design system yang utuh** (misal: shell/hero banner dari Referensi A + gaya kartu KPI dari Referensi B + struktur tabel/chart dari Referensi C) dengan palet warna & tipografi yang tetap menyatu.
 3. **Wajib Visual Fidelity:** Sebelum menulis kode, **baca** [references/dashboard-archetypes.md](references/dashboard-archetypes.md) **dan inspeksi gambar asli** (dari file lokal atau unduh/buka via URL CDN di atas bila dijalankan di device lain) agar layout, hierarki permukaan, grafik, warna aksen, dan karakter visualnya **benar-benar sesuai foto referensi**.
 
-### F. Image Reference & Pencarian Aset Real-World (Diperbolehkan & Dianjurkan)
+#### Referensi Interaksi & Landing Motion Terbaru (CDN Publik)
+Selain 9 archetype dashboard di atas, tersedia **7 video pola interaksi & blok animasi** di [references/motion-blocks-library.md](references/motion-blocks-library.md) beserta 60+ blok **Shadcn Space** (`Dot-Matrix AI Thinking Pill`, `Cinema 3D Seat Map & View Preview`, `Inline Morphing Sentence Order Sheet`, `Dark AI SaaS Landing Architecture`, `Product Dial Showcase Hero 68`, `Immersive Game & Character Hero 55`, dan `Frosted Glass Plan Cards Pricing 18`).
+
+### F. Image Reference & Pencarian Aset Real-World Otomatis (WAJIB, Anti-Icon-Buatan)
 - **Pinterest (Visual & Moodboard Reference):** `https://www.pinterest.com/` — referensi komposisi visual, moodboard gaya, foto produk, dan inspirasi art direction.
-- **Pencarian Aset Nyata (Google / Web):** AI **diperbolehkan dan didorong untuk mencari aset gambar nyata di Google/web** (foto produk, botol minuman mis. botol Starbucks, makanan, kendaraan, logo, stock photo, dll.) saat user memintanya untuk ditampilkan di website:
-  - Cari URL gambar berkualitas tinggi & bersih (tanpa watermark) melalui pencarian web (`search_web` / sumber terbuka seperti Wikimedia, Unsplash, Pexels, atau situs resmi produk).
-  - Verifikasi tautan gambar aktif (HTTP `200`, tipe `image/*`) atau simpan lokal / unggah ke CDN bila perlu agar tidak gagal muat (`403`/`404`) akibat hotlink block, serta selalu lengkapi `alt`, `object-fit`, dan rasio proporsional.
+- **Dilarang Menggambar Ikon / Logo Buatan Seadanya:** Jangan membuat `<svg>` ikon UI atau logo brand asal-asalan secara manual bila aset resmi/library tersedia:
+  - Untuk **ikon UI**: wajib pakai **Material Symbols & Icons** atau **Icons8**.
+  - Untuk **logo brand nyata, foto produk, foto orang, botol/kemasan, kendaraan, atau visual utama** (mis. logo Apple/Starbucks, foto sepatu sneaker, foto botol minuman, gambar alat rumah tangga): AI **wajib mencari aset asli secara otomatis** lewat pencarian web (`search_web`, Wikimedia Commons, brand/official site, Unsplash/Pexels, Icons8) atau mengambil referensi dari CDN/proyek.
+  - Verifikasi URL gambar aktif (`200 OK`, tipe `image/*`) atau unduh ke folder aset lokal proyek (`assets/` / `public/`) serta unggah ke CDN bila tersedia agar gambar & logo selalu tampil tajam tanpa error `403`/`404` atau broken image, dan selalu lengkapi `alt`, dimensi/rasio (`aspect-ratio`), serta `object-fit`.
 
 ### G. Slot Ekspansi Resource Lainnya (Siap Diupdate)
 Siap ditambahkan kategori tambahan sesuai permintaan pembaruan pengguna berikutnya.
