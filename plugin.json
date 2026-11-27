@@ -1,8 +1,8 @@
 {
   "name": "vanzee-designer",
   "displayName": "Vanzee Designer",
-  "description": "Curated UI/UX design system, 9 dashboard references, 7 analyzed motion video patterns (CDN), 60+ Shadcn Space animated blocks, 42 micro-interactions, 20 text animations, anti-slop typography, auto real-asset search, and Lighthouse rules.",
-  "version": "1.1.0",
+  "description": "Curated UI/UX design system, 12 best color palettes (CDN), 9 dashboard references, 7 analyzed motion videos, 60+ Shadcn Space blocks, 42 micro-interactions, 20 text animations, auto real-asset search, and Lighthouse rules.",
+  "version": "1.2.0",
   "repository": "https://github.com/EVANKRISTANTO/vanzee-designer",
   "suggestedPrompts": [
     "Build an analytics dashboard using one of the curated vanzee-designer references",

@@ -15,7 +15,7 @@ Paket skill dan rules terkurasi untuk Antigravity agar agen AI selalu membangun 
 1. **`vanzee-designer`**
    - **Icon, Illustration & 3D:** [Material Symbols & Icons](https://fonts.google.com/icons), [Icons8](https://icons8.com/)
    - **Fonts & Typography:** [Google Fonts](https://fonts.google.com/), [Fontshare](https://www.fontshare.com/), [Typewolf](https://www.typewolf.com/)
-   - **Colors & Contrast:** [Realtime Colors](https://www.realtimecolors.com/), [Coolors](https://coolors.co/)
+   - **Colors & Contrast:** 12 Best Color Palettes 6-step (`references/color-palettes.md`, termasuk 6 palet referensi CDN: *Emerald Mint*, *Espresso Mocha*, *Ocean Petrol*, *Royal Plum*, *Electric Cobalt*, *Crimson Velvet* + 6 palet tambahan), [Realtime Colors](https://www.realtimecolors.com/), [Coolors](https://coolors.co/)
    - **Web & UI/UX Galleries:** [Refero](https://refero.design/styles), [Land-book](https://land-book.com/), [Lapa Ninja](https://www.lapa.ninja/), [Mobbin](https://mobbin.com/), [Godly](https://godly.design/), [Awwwards](https://www.awwwards.com/), [Shadcn Space](https://shadcnspace.com/animated-blocks), [Pinterest](https://www.pinterest.com/)
    - **9 Referensi UI/Dashboard Terkurasi + 7 Video Pola Interaksi Teranalisa (Lokal + CDN Publik):**
      1. *Fennel AI Agent Dashboard*

@@ -28,9 +28,16 @@ Gunakan library terkurasi di bawah ini sebagai sumber utama saat merancang atau 
   - **Anti-Slop:** Hindari memakai *Inter*, *Plus Jakarta Sans*, *Roboto*, atau *Space Grotesk* secara otomatis kecuali diminta langsung oleh pengguna atau merupakan identitas brand.
   - **Performa:** Muat hanya bobot (*weights*) yang benar-benar dipakai dan sertakan `display=swap`.
 
-### C. Color Palette & Contrast Tools
-- **Realtime Colors:** `https://www.realtimecolors.com/` — uji kombinasi warna background, text, primary, secondary, dan accent langsung pada simulasi UI nyata agar kontras & hierarkinya terukur.
-- **Coolors:** `https://coolors.co/` — generator palet warna cepat, eksplorasi harmoni warna, dan pengecekan kontras aksesibilitas (WCAG AA/AAA).
+### C. Best Color Palettes (12 Palet 6-Step) & Contrast Tools
+Gunakan **12 palet warna tonal 6 langkah** terkurasi di [references/color-palettes.md](references/color-palettes.md) (6 palet referensi CDN + 6 palet tambahan lintas industri, lengkap dengan aturan 60-30-10 & kontras WCAG >= 4.5:1):
+- **Emerald Mint:** `#0D6E5D` → `#14A085` → `#2EC7A4` → `#6DE7C1` → `#B5F5DB` → `#E8FFF5` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-emerald-mint.jpg))
+- **Espresso Mocha:** `#211713` → `#493027` → `#76503B` → `#A87557` → `#D0A98B` → `#F0DFCE` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-espresso-mocha.jpg))
+- **Ocean Petrol:** `#071C27` → `#123747` → `#245568` → `#477C8B` → `#91B3B9` → `#DCE9E8` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-ocean-petrol.jpg))
+- **Royal Plum:** `#17121F` → `#302538` → `#51405F` → `#796487` → `#B09BB8` → `#E8DDEB` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-royal-plum.jpg))
+- **Electric Cobalt:** `#0A1A3C` → `#0F2E7A` → `#1857D6` → `#3B82F6` → `#93C5FD` → `#E0F2FF` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-electric-cobalt.jpg))
+- **Crimson Velvet:** `#2B000D` → `#520018` → `#7C0A2A` → `#A5143C` → `#D9476D` → `#F8B3C4` ([CDN](https://r2.fivemanage.com/NPwnP3XPgJZECWofbq36U/vanzee-designer/palettes/palette-crimson-velvet.jpg))
+- **6 Palet Tambahan:** *Solar Amber*, *Sage Botanical*, *Safety Orange & Graphite*, *Obsidian Violet*, *Warm Paper & Charcoal*, dan *Cyber Lime & Carbon* (detail skala hex & mapping CSS ada di [references/color-palettes.md](references/color-palettes.md)).
+- **Tools Uji Warna:** **Realtime Colors** (`https://www.realtimecolors.com/`) untuk simulasi UI langsung dan **Coolors** (`https://coolors.co/`) untuk eksplorasi & cek kontras.
 
 ### D. Website & UI/UX Inspiration Galleries
 Gunakan galeri referensi di bawah ini saat meriset layout landing page, alur produk, gaya visual, maupun interaksi web modern:
