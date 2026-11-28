@@ -4,16 +4,16 @@ Kumpulan **12 palet warna terkurasi** dengan skala tonal 6 langkah (*gelap ke te
 
 ---
 
-## Cara Memetakan 6 Langkah Warna ke CSS `:root`
+## Cara Memetakan 6 Langkah Warna ke CSS `:root` (*Calm Neutral-First 75 / 15 / 10*)
 
-Setiap palet memiliki 6 tingkat dari **1 (Tergelap)** sampai **6 (Terang)**:
+Agar website tetap **minimalist modern, tenang, dan tidak keramean warna**, jaga rasio **75% Netral Tenang + 15% Struktur Permukaan + 10% Satu Aksen Utama** (jangan mewarnai semua kartu/ikon/badge dengan warna mencolok):
 
-| Mode | Canvas / Background (`60%`) | Surface / Card (`30%`) | Primary & Accent (`10%`) | Text Utama & Muted |
+| Mode | Canvas / Background (`75%`) | Surface / Card (`15%`) | Primary & Accent (`10%`) | Text Utama & Muted |
 | :--- | :--- | :--- | :--- | :--- |
-| **Light Mode** | Putih `#FFFFFF` atau Step 6 (`#E8FFF5`, `#F0DFCE`, dll.) | `#FFFFFF` + tint Step 5 (`border` / `badge`) | Step 2 / Step 3 (button), Step 1 (hover), Step 4 (highlight) | Step 1 (`#071C27`) untuk teks utama, Step 2/3 untuk subjudul |
-| **Dark Mode** | Step 1 (`#071C27`, `#211713`, `#17121F`, `#0A1A3C`, `#2B000D`) | Step 2 (`#123747`, `#493027`, `#302538`, `#0F2E7A`, `#520018`) | Step 4 / Step 5 (CTA cerah & ring aktif) | Step 6 (`#DCE9E8`, `#F0DFCE`, `#E8DDEB`) untuk teks utama |
+| **Light Mode** | Putih `#FFFFFF` atau Off-White / Step 6 lembut (`#FAF8F4`, `#F6F7FB`, `#E8FFF5`) | `#FFFFFF` + border hairline lembut (tint Step 5 hanya untuk badge status/hover) | Step 2 / Step 3 (CTA utama), Step 1 (hover), Step 4 (sorotan metrik) | Step 1 (`#071C27`) untuk teks utama, abu-abu netral kontras >= 4.5:1 untuk subjudul |
+| **Dark Mode** | Matte Dark / Step 1 (`#071C27`, `#211713`, `#17121F`, `#0A1A3C`, `#2B000D`) | Step 2 (`#123747`, `#493027`, `#302538`, `#0F2E7A`, `#520018`) | Step 4 / Step 5 (CTA cerah & ring aktif) | Step 6 (`#DCE9E8`, `#F0DFCE`, `#E8DDEB`) untuk teks utama |
 
-> **Aturan Kontras:** Selalu uji kombinasi warna foreground vs background agar teks terbaca jelas (`>= 4.5:1`), dan jaga aksen maksimal `10%` dari viewport agar tampilan tetap elegan.
+> **Aturan Kontras & Ketenangan:** Selalu uji kontras teks >= `4.5:1`, pilih maksimal **1 palet** per proyek, dan batasi aksen hanya di titik fokus utama (`<= 10%` viewport) agar mata pengunjung tetap nyaman.
 
 ---
 
