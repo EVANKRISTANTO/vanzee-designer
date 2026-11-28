@@ -143,6 +143,7 @@ Setiap website dan aplikasi wajib melewati standar keamanan di [references/secur
 - **Security Headers & Anti-Clickjacking (*Jurnal PTES 2025*):** Terapkan `X-Frame-Options`, `CSP` (`frame-ancestors`), `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `HSTS`, dan **SRI** untuk script/CSS eksternal.
 - **Frontend & DOM Security:** Hindari `innerHTML` dengan input mentah (anti-XSS), lindungi cookie sesi (`HttpOnly; Secure; SameSite`), pasang token Anti-CSRF, dan **jangan pernah** menaruh API key/Webhook URL di kode JS client.
 - **API & Akses Kontrol (*Alpha Code Pentest & OWASP 2025*):** Cek otorisasi & kepemilikan data di server (anti-IDOR, bukan hanya menyembunyikan tombol UI), batasi field API hanya yang diperlukan UI, validasi + rate limit endpoint sensitif, dan cegah error stacktrace tampil di UI.
+- **Zero Rahasia Dapur & Anti-Fingerprinting (*Ketat*):** Dilarang menampilkan tech stack, framework, database, virtualization, atau arsitektur server di UI/copy publik (kecuali diminta user atau situs developer/portofolio teknis). Hapus komentar internal HTML & nama tabel DB mentah, matikan source map (`.map`) di produksi, sembunyikan `X-Powered-By`/versi server, dan pisahkan tegas data publik vs admin.
 
 ---
 

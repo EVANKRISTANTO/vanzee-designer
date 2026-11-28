@@ -11,6 +11,7 @@ Panduan praktis hasil kurasi 5 artikel (*Forgelo*, *Developer Awam*, *Nusantara.
 3. **Prioritaskan Alur Nyata, Bukan Sekadar Cantik di Screenshot:** Pastikan aksi utama pengguna (pesan, kontak, daftar, cari data) mudah dijangkau di desktop maupun layar sentuh HP.
 4. **Satu Tujuan Utama per Halaman:** Arahkan perhatian pengunjung ke aksi kunci bisnis secara jelas, bukan menyebar fokus ke terlalu banyak tombol/topik dalam satu layar.
 5. **Aset Nyata, Bebas Ilustrasi AI Aneh:** Hindari ilustrasi/wajah AI generik yang terasa artifisial; gunakan foto produk/brand nyata dan micro-interaction halus yang terasa organik.
+6. **Fokus Manfaat Produk, Bukan Rahasia Dapur:** Pengunjung ingin tahu solusi untuk mereka—**jangan** membocorkan tech stack, database, virtualization, atau arsitektur server di copy/footer website publik kecuali diminta user atau memang produk teknis/portofolio developer.
 
 ---
 

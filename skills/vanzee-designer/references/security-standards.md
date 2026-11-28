@@ -42,7 +42,23 @@ add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" alway
 
 ---
 
-## 4. Checklist Security Gate Pra-Rilis (7 Poin Wajib)
+## 4. Zero Rahasia Dapur & Anti-Fingerprinting (*Ketat*)
+
+Website publik hanya menampilkan **nilai produk dan layanan bagi pengguna**—jangan membocorkan arsitektur internal, infrastruktur, maupun detail implementasi ke publik (`OWASP A02:2025` & *Information Disclosure*):
+
+1. **Larangan Bocor Tech Stack & Virtualization di UI Publik (Ketat):**
+   - **Dilarang** menampilkan nama framework, bahasa backend, database, virtualization/hypervisor (KVM, Proxmox, Docker, spesifikasi VPS/node), atau arsitektur server di hero, kartu fitur, maupun footer **kecuali diminta eksplisit oleh user** atau website tersebut memang portofolio developer/produk teknis developer.
+   - *Contoh salah:* `"Ditenagai Laravel 11 + MariaDB di atas Docker KVM Node-02"`. *Contoh benar:* `"Data tersinkronisasi real-time dengan uptime tinggi"`.
+2. **Zero Internal Plumbing & Sisa Debug:**
+   - Hapus komentar HTML/CSS internal (`<!-- ... -->`), nama tabel/kolom DB mentah (`users_tbl`, `ledger_id`), `console.log` sensitif, maupun label sisa AI (`Built with AI`, `Sample/Mock`).
+3. **Anti-Fingerprinting Produksi:**
+   - Sembunyikan header sidik jari teknologi (`X-Powered-By`, `server_tokens off;` di Nginx), nonaktifkan **Source Maps (`.map`)** di build produksi agar logika kode tidak terekspos, dan blokir akses publik ke `.env`, `.git`, `phpinfo`, atau endpoint diagnostik internal.
+4. **Batas Tegas Data Publik vs Admin:**
+   - Pisahkan payload API publik dan admin; jangan pernah merender metrik server, IP internal, log sistem, atau endpoint internal di halaman publik.
+
+---
+
+## 5. Checklist Security Gate Pra-Rilis (9 Poin Wajib)
 
 1. [ ] Tidak ada API key, token, password, atau webhook URL yang tertulis di kode frontend/HTML/Git.
 2. [ ] Tidak ada rendering input user via `innerHTML` mentah (bebas celah XSS).
@@ -51,3 +67,5 @@ add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" alway
 5. [ ] Endpoint hanya mengembalikan field yang diperlukan UI dan mengecek kepemilikan resource (anti-IDOR).
 6. [ ] Cookie sesi memakai `HttpOnly`, `Secure`, dan `SameSite`.
 7. [ ] Pesan error di UI tidak membocorkan stacktrace, path server, atau query SQL mentah.
+8. [ ] UI/copy publik **bebas dari bocoran tech stack, virtualization, nama tabel DB, komentar internal, atau label sisa AI** (kecuali diminta user).
+9. [ ] Build produksi mematikan source map (`.map`), menyembunyikan header `X-Powered-By` / versi server, serta memblokir `.env`/`.git`.
