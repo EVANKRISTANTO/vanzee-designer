@@ -29,6 +29,7 @@ Paket skill dan rules terkurasi untuk Antigravity agar agen AI selalu membangun 
      9. *Smart Home Control Dashboard*
      10. *Motion & Block Library (`references/motion-blocks-library.md`):* **Dot-Matrix AI Thinking Pill**, **Cinema 3D Seat Map & View Preview**, **Inline Morphing Sentence Order Sheet**, **Dark AI SaaS Landing Architecture**, **Product Dial Showcase Hero (Hero 68)**, **Immersive Game & Character Hero (Hero 55)**, **Frosted Glass Plan Cards (Pricing 18)**, plus 60+ blok **Shadcn Space Animated Blocks**.
    - **Minimalist Modern & Anti-Keramean (`references/minimalist-web-standards.md`):** Mode default **Minimalist Ringkas** (maks 2–3 baris per kartu, whitespace >= 35%, warna *Calm Neutral-First 75/15/10*, progressive disclosure, dan 4 blueprint website modern).
+   - **Human Craft & Natural Copy (`references/human-craft-and-ai-clarity.md`):** Standar anti-AI-look (disiplin Design Token `:root`, alur konversi nyata), copywriting alami bebas klise AI, struktur *direct-answer* ramah AI search, serta checklist pra-terbit.
    - **Otomasi Aset Nyata (Anti-Icon-Buatan):** Wajib pakai library ikon/logo/foto asli lewat pencarian web otomatis bila aset tidak tersedia secara lokal.
    - **Katalog 42 Micro-Interactions**, **System-Wide Component Parity** (`references/component-craft.md`), **Motion Recipes** (`references/motion-recipes.md`), dan **7 Guardrail Good UX vs Bad UX**.
 2. **`typography-curation`** — Panduan pairing font anti-slop (menghindari font default AI yang monoton).

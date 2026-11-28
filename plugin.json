@@ -1,8 +1,8 @@
 {
   "name": "vanzee-designer",
   "displayName": "Vanzee Designer",
-  "description": "Minimalist modern UI/UX design system: calm neutral-first 12 palettes, anti-crowding text limits, 9 dashboard & 4 website blueprints, 60+ Shadcn Space blocks, 42 micro-interactions, 20 text animations, auto real-asset search, and Lighthouse rules.",
-  "version": "1.3.0",
+  "description": "Minimalist modern UI/UX design system: human-craft anti-AI-look, natural copy & AI readability, calm 12 palettes, 9 dashboard & 4 website blueprints, 60+ Shadcn Space blocks, 42 micro-interactions, 20 text animations, and Lighthouse rules.",
+  "version": "1.4.0",
   "repository": "https://github.com/EVANKRISTANTO/vanzee-designer",
   "suggestedPrompts": [
     "Build an analytics dashboard using one of the curated vanzee-designer references",

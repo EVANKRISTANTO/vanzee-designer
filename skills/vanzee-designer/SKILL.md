@@ -125,11 +125,22 @@ Pastikan antarmuka tidak mengulang 7 kesalahan UX klasik berikut:
 
 ---
 
-## 4. Sinergi dengan Skill Lain
+## 4. Human Craft, Anti-AI-Look, Natural Copy & AI Readability
 
-- **`vanzee-designer`** (Skill ini): Hub library terkurasi (Material Symbols, Google Fonts), 9 referensi desain UI, katalog 42 micro-interaction, dan 7 guardrail Good UX.
+Pastikan hasil website terasa dibuat manusia, bukan template AI generik, serta mudah dibaca pengunjung dan AI search ([references/human-craft-and-ai-clarity.md](references/human-craft-and-ai-clarity.md)):
+
+1. **Anti-AI-Look UI:** Pangkas ornamen/simetri kaku di draf awal, kunci seluruh warna/spacing/radius di Design Token `:root`, dan prioritaskan alur konversi nyata di desktop & HP daripada sekadar bagus di screenshot.
+2. **Natural Human Copywriting (Koord. `antislop-copywriting`):** Variasikan panjang kalimat, buang klise pembuka/penutup AI (*"Di era digital..."*, *"Penting untuk dicatat..."*, *"Memberdayakan perjalanan Anda"*), tulis konkret dalam bahasa harian yang spesifik tanpa mengarang angka/testimoni palsu.
+3. **Direct-Answer & Pra-Terbit:** Taruh inti jawaban langsung di kalimat pembuka (ramah SEO & AI Overviews), jaga 1 topik jelas per halaman, ganti seluruh gambar contoh dengan aset nyata, dan cek fungsi tombol CTA langsung di HP sebelum publish.
+
+---
+
+## 5. Sinergi dengan Skill Lain
+
+- **`vanzee-designer`** (Skill ini): Hub library terkurasi, 12 palet warna, standar minimalist ringkas, human craft & natural copy, 9 dashboard & 4 website blueprint, 42 micro-interaction, dan 7 guardrail Good UX.
 - **`ui-ux-pro-max`**: Arah visual, komposisi tata letak, dan pemilihan palet warna produk.
-- **`typography-curation`**: Pemilihan & pairing font spesifik non-AI-default dari Google Fonts.
+- **`typography-curation`**: Pemilihan & pairing font spesifik non-AI-default dari Google Fonts & Fontshare.
 - **`text-animations`**: Katalog 20 animasi teks & kinetic typography yang aksesibel.
 - **`micro-interactions`**: Standar token timing/easing CSS dan aturan aksesibilitas gerak.
+- **`antislop-copywriting`**: Filter kalimat alami bebas klise AI untuk seluruh teks halaman.
 - **`lighthouse-audit-fix`**: Audit performa, aksesibilitas, SEO, dan Core Web Vitals setelah website selesai dibangun.
