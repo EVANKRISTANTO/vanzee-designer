@@ -133,13 +133,22 @@ Pastikan hasil website terasa dibuat manusia, bukan template AI generik, serta m
 1. **Anti-AI-Look UI:** Pangkas ornamen/simetri kaku di draf awal, kunci seluruh warna/spacing/radius di Design Token `:root`, dan prioritaskan alur konversi nyata di desktop & HP daripada sekadar bagus di screenshot.
 2. **Natural Human Copywriting (Koord. `antislop-copywriting`):** Variasikan panjang kalimat, buang klise pembuka/penutup AI (*"Di era digital..."*, *"Penting untuk dicatat..."*, *"Memberdayakan perjalanan Anda"*), tulis konkret dalam bahasa harian yang spesifik tanpa mengarang angka/testimoni palsu.
 3. **Direct-Answer & Pra-Terbit:** Taruh inti jawaban langsung di kalimat pembuka (ramah SEO & AI Overviews), jaga 1 topik jelas per halaman, ganti seluruh gambar contoh dengan aset nyata, dan cek fungsi tombol CTA langsung di HP sebelum publish.
-4. **7 Prinsip UX, Actionable Alerts & Discord UI (`references/notification-and-discord-ui.md`):** Terapkan konsistensi modular (*Spotify, Dropbox, Apple*), navigasi cepat, serta desain notifikasi yang *scannable* dengan *severity color-coding*, tombol aksi lanjut (*Acknowledge/View Logs*), dan pola aman Discord Webhook/Embeds/Components V2 (tanpa expose webhook URL di frontend JS).
+4. **7 Prinsip UX, Actionable Alerts & Discord UI ([references/notification-and-discord-ui.md](references/notification-and-discord-ui.md)):** Terapkan konsistensi modular (*Spotify, Dropbox, Apple*), navigasi cepat, serta desain notifikasi yang *scannable* dengan *severity color-coding*, tombol aksi lanjut (*Acknowledge/View Logs*), dan pola aman Discord Webhook/Embeds/Components V2 (tanpa expose webhook URL di frontend JS).
 
 ---
 
-## 5. Sinergi dengan Skill Lain
+## 5. Web & UI Security Guardrails (PTES, Alpha Code & OWASP 2025)
 
-- **`vanzee-designer`** (Skill ini): Hub library terkurasi, 12 palet warna, standar minimalist ringkas, human craft & natural copy, 9 dashboard & 4 website blueprint, 42 micro-interaction, dan 7 guardrail Good UX.
+Setiap website dan aplikasi wajib melewati standar keamanan di [references/security-standards.md](references/security-standards.md):
+- **Security Headers & Anti-Clickjacking (*Jurnal PTES 2025*):** Terapkan `X-Frame-Options`, `CSP` (`frame-ancestors`), `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `HSTS`, dan **SRI** untuk script/CSS eksternal.
+- **Frontend & DOM Security:** Hindari `innerHTML` dengan input mentah (anti-XSS), lindungi cookie sesi (`HttpOnly; Secure; SameSite`), pasang token Anti-CSRF, dan **jangan pernah** menaruh API key/Webhook URL di kode JS client.
+- **API & Akses Kontrol (*Alpha Code Pentest & OWASP 2025*):** Cek otorisasi & kepemilikan data di server (anti-IDOR, bukan hanya menyembunyikan tombol UI), batasi field API hanya yang diperlukan UI, validasi + rate limit endpoint sensitif, dan cegah error stacktrace tampil di UI.
+
+---
+
+## 6. Sinergi dengan Skill Lain
+
+- **`vanzee-designer`** (Skill ini): Hub library terkurasi, 12 palet warna, standar minimalist ringkas, human craft & natural copy, 9 dashboard & 4 website blueprint, 42 micro-interaction, 7 guardrail Good UX, dan security guardrails.
 - **`ui-ux-pro-max`**: Arah visual, komposisi tata letak, dan pemilihan palet warna produk.
 - **`typography-curation`**: Pemilihan & pairing font spesifik non-AI-default dari Google Fonts & Fontshare.
 - **`text-animations`**: Katalog 20 animasi teks & kinetic typography yang aksesibel.

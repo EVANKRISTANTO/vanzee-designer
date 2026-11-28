@@ -1,8 +1,8 @@
 {
   "name": "vanzee-designer",
   "displayName": "Vanzee Designer",
-  "description": "Minimalist modern UI/UX design system: human-craft anti-AI-look, natural copy, notification & Discord Webhook UI, calm 12 palettes, 9 dashboard & 4 website blueprints, 60+ Shadcn Space blocks, 42 micro-interactions, 20 text animations, and Lighthouse rules.",
-  "version": "1.5.0",
+  "description": "Minimalist modern UI/UX & secure web design system: OWASP 2025 & PTES security gate, human-craft anti-AI-look, natural copy, Discord Webhook UI, calm 12 palettes, 9 dashboard & 4 website blueprints, 60+ Shadcn Space blocks, 42 micro-interactions, 20 text animations, and Lighthouse rules.",
+  "version": "1.6.0",
   "repository": "https://github.com/EVANKRISTANTO/vanzee-designer",
   "suggestedPrompts": [
     "Build an analytics dashboard using one of the curated vanzee-designer references",
