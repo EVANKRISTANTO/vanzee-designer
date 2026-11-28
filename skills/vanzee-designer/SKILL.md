@@ -48,6 +48,7 @@ Gunakan galeri referensi di bawah ini saat meriset layout landing page, alur pro
 - **Godly:** `https://godly.design/` — inspirasi website dengan animasi, tipografi ekspresif, dan craft interaktif tinggi.
 - **Awwwards:** `https://www.awwwards.com/` — tren web design, layout eksperimental, dan micro-interaction kelas dunia.
 - **Shadcn Space & Animated Blocks:** `https://shadcnspace.com/` & `https://shadcnspace.com/animated-blocks` — library blok landing page & motion prompt Shadcn (Hero, Pricing, Bento, Feature, Integration, Auth, Full Landing Pages). Lihat katalog lengkap & video referensi CDN di [references/motion-blocks-library.md](references/motion-blocks-library.md).
+- **Discord Webhook Builder & Components V2:** `https://discord-webhook.com/` — visual builder untuk menyusun Embeds, Components V2, interactive buttons, dan notifikasi terstruktur ([references/notification-and-discord-ui.md](references/notification-and-discord-ui.md)).
 
 ### E. Referensi Desain UI & Dashboard Terkurasi (9 Archetype CDN + Multi-Referensi)
 
@@ -132,6 +133,7 @@ Pastikan hasil website terasa dibuat manusia, bukan template AI generik, serta m
 1. **Anti-AI-Look UI:** Pangkas ornamen/simetri kaku di draf awal, kunci seluruh warna/spacing/radius di Design Token `:root`, dan prioritaskan alur konversi nyata di desktop & HP daripada sekadar bagus di screenshot.
 2. **Natural Human Copywriting (Koord. `antislop-copywriting`):** Variasikan panjang kalimat, buang klise pembuka/penutup AI (*"Di era digital..."*, *"Penting untuk dicatat..."*, *"Memberdayakan perjalanan Anda"*), tulis konkret dalam bahasa harian yang spesifik tanpa mengarang angka/testimoni palsu.
 3. **Direct-Answer & Pra-Terbit:** Taruh inti jawaban langsung di kalimat pembuka (ramah SEO & AI Overviews), jaga 1 topik jelas per halaman, ganti seluruh gambar contoh dengan aset nyata, dan cek fungsi tombol CTA langsung di HP sebelum publish.
+4. **7 Prinsip UX, Actionable Alerts & Discord UI (`references/notification-and-discord-ui.md`):** Terapkan konsistensi modular (*Spotify, Dropbox, Apple*), navigasi cepat, serta desain notifikasi yang *scannable* dengan *severity color-coding*, tombol aksi lanjut (*Acknowledge/View Logs*), dan pola aman Discord Webhook/Embeds/Components V2 (tanpa expose webhook URL di frontend JS).
 
 ---
 
